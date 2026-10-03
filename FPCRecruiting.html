@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Flagler Palm Coast Football recruiting hub for college coaches." />
+    <title>FPC Football | Recruiting Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav shell">
+        <a class="brand" href="#top" aria-label="Flagler Palm Coast Football Recruiting Hub">
+          <img class="brand-mark" src="assets/fpc-bulldog.png" alt="Flagler Palm Coast Bulldogs" />
+          <span>Football Recruiting</span>
+        </a>
+        <a class="nav-action" href="#contact">Coach contacts <span>→</span></a>
+      </nav>
+
+      <div class="shell hero-content" id="top">
+        <p class="eyebrow">Flagler Palm Coast High School · 6A Region 1</p>
+        <h1>Flagler Palm Coast<br /><em>Bulldogs.</em></h1>
+        <p class="hero-copy">Meet the FPC players competing in 6A Region 1—built for college coaches who need film, measurables, academics, and the right contact without the runaround.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#prospects">View prospects <span>↓</span></a>
+          <a class="button button-quiet" target="_blank" rel="noopener" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=washingtonc%40flaglerschools.com&amp;su=FPC%20Football%20Film%20Request&amp;body=Coach%20Washington%2C%0A%0AI%20would%20like%20to%20request%20additional%20film%20and%20recruiting%20information.%0A%0AProgram%3A%0AName%3A%0APosition%20group(s)%20of%20interest%3A%0A%0AThank%20you.">Request more film</a>
+        </div>
+      </div>
+      <div class="hero-stats shell" aria-label="Recruiting program facts">
+        <div><strong>6A</strong><span>FHSAA classification</span></div>
+        <div><strong>Region 1</strong><span>District 1</span></div>
+        <div><strong>2027–30</strong><span>Future classes tracked</span></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="shell intro" aria-labelledby="board-heading">
+        <div>
+          <p class="eyebrow green">Recruiting board</p>
+          <h2 id="board-heading">Find the fit, faster.</h2>
+        </div>
+        <p>Filter by class or position, then open a card for film, social profile, academic information, stats, and direct athlete contact.</p>
+      </section>
+
+      <section class="shell filters" id="prospects" aria-label="Prospect filters">
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Search a player, position, or trait" /></label>
+        <div class="filter-group" id="classFilters" aria-label="Filter by class"></div>
+        <div class="filter-group" id="positionFilters" aria-label="Filter by position"></div>
+      </section>
+
+      <section class="shell status-row">
+        <p id="resultsCount" aria-live="polite"></p>
+        <button class="text-button" id="resetFilters">Reset filters</button>
+      </section>
+
+      <section class="shell card-grid" id="playerGrid" aria-label="Recruiting prospects"></section>
+
+      <section class="contact" id="contact">
+        <div class="shell contact-grid">
+          <div>
+            <p class="eyebrow">Start a conversation</p>
+            <h2>Need a transcript, full game, or more context?</h2>
+            <p>Our recruiting staff will get you the right information quickly.</p>
+          </div>
+          <div class="contact-cards">
+            <article>
+              <p>Head Coach</p>
+              <h3>Patrick Turner</h3>
+              <a href="tel:+19043924659">904-392-4659</a>
+              <a href="mailto:turnerp@flaglerschools.com">turnerp@flaglerschools.com</a>
+            </article>
+            <article>
+              <p>Recruiting Coordinator · RB Coach</p>
+              <h3>Charlie Washington</h3>
+              <a href="tel:+13869865299">386-986-5299</a>
+              <a href="mailto:washingtonc@flaglerschools.com">washingtonc@flaglerschools.com</a>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <span>Flagler Palm Coast Football</span>
+      <span>5500 State Route 100 · Palm Coast, FL 32164</span>
+      <span>Recruiting information supplied by FPC Football · Verify eligibility and academic requirements with the school.</span>
+    </footer>
+
+    <dialog id="playerDialog" aria-labelledby="dialogName">
+      <button class="dialog-close" id="dialogClose" aria-label="Close player profile">×</button>
+      <div id="dialogContent"></div>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
