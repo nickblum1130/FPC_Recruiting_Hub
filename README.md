@@ -9,10 +9,10 @@ The repository is ready for GitHub Pages. The deployment workflow publishes the 
 Run this command from the project folder:
 
 ```bash
-./scripts/publish-site.sh "Update recruiting information"
+python3 scripts/publish_site.py "Update recruiting information"
 ```
 
-The command downloads the current public [recruiting spreadsheet](https://docs.google.com/spreadsheets/d/1BxCZrYn_CI-f5hlLCAKEHB645Ww8Y6e9/edit?gid=1778590561#gid=1778590561) and [recruiting presentation](https://docs.google.com/presentation/d/1NxvVnwCA0WYOXMjQHDwsU-jAQkIh-ir0yfvMcCtUJ5E/edit?slide=id.p#slide=id.p), regenerates player data and featured images, rebuilds `dist/`, commits the site files, pushes them to `main`, and triggers the GitHub Pages deployment. It does not place Google credentials or source-document copies in the repository.
+The Python script downloads the current public [recruiting spreadsheet](https://docs.google.com/spreadsheets/d/1BxCZrYn_CI-f5hlLCAKEHB645Ww8Y6e9/edit?gid=1778590561#gid=1778590561) and [recruiting presentation](https://docs.google.com/presentation/d/1NxvVnwCA0WYOXMjQHDwsU-jAQkIh-ir0yfvMcCtUJ5E/edit?slide=id.p#slide=id.p), regenerates player data and featured images, rebuilds `dist/`, commits the site files, pushes them to `main`, and triggers the GitHub Pages deployment. It does not place Google credentials or source-document copies in the repository.
 
 The source documents must remain accessible by Google export link for the terminal sync to work.
 
