@@ -1,6 +1,8 @@
 # FPC Football Recruiting Hub
 
-Share `FPCRecruiting.html`. It is a single, self-contained college-coach recruiting app built from the supplied FPC recruiting presentation and roster spreadsheet. Coaches should download it, then open it in Chrome, Safari, or Edge; Google Drive's in-browser preview does not run the app's interactive JavaScript.
+The repository is ready for GitHub Pages. The deployment workflow publishes the static site in `dist/` after each push to `main`. In the GitHub repository, set **Settings → Pages → Build and deployment → Source** to **GitHub Actions**. The published site will be available at `https://nickblum1130.github.io/FPC_Recruiting_Hub/`.
+
+`FPCRecruiting.html` remains available as a single, self-contained file for sharing by download. Coaches should open it in Chrome, Safari, or Edge; Google Drive's in-browser preview does not run the app's interactive JavaScript.
 
 ## Included workflow
 
