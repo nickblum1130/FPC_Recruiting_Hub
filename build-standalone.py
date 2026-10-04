@@ -49,6 +49,10 @@ DIST_ASSETS.mkdir(parents=True, exist_ok=True)
 (DIST / "index.html").write_text(source_page)
 (DIST / "styles.css").write_text(source_styles)
 (DIST / "app.js").write_text(source_script)
+data_source = ROOT / "data" / "players.js"
+if data_source.exists():
+    (DIST / "data").mkdir(exist_ok=True)
+    copy2(data_source, DIST / "data" / "players.js")
 for filename in ASSETS:
     copy2(ROOT / "assets" / filename, DIST_ASSETS / filename)
 

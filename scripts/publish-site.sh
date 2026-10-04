@@ -7,6 +7,7 @@ set -euo pipefail
 project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$project_dir"
 
+python3 scripts/sync-google-sources.py
 python3 build-standalone.py
 
 # Stage only files that form the published site or its editable source. This
@@ -15,6 +16,7 @@ git add \
   FPCRecruiting-source.html \
   FPCRecruiting.html \
   app.js \
+  data \
   styles.css \
   assets \
   dist \

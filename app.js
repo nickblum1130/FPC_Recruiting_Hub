@@ -81,6 +81,14 @@ const spreadsheetUpdates = {
 };
 players.forEach(player => Object.assign(player, spreadsheetUpdates[player.name] || {}));
 
+// When the terminal sync has generated fresh source data, it replaces the
+// original hand-built snapshot above. Keeping the snapshot lets the standalone
+// download continue to work even without the generated data file.
+if (Array.isArray(window.FPC_PLAYERS) && window.FPC_PLAYERS.length) {
+  players.length = 0;
+  players.push(...window.FPC_PLAYERS);
+}
+
 const search = document.querySelector('#search');
 const grid = document.querySelector('#playerGrid');
 const count = document.querySelector('#resultsCount');
