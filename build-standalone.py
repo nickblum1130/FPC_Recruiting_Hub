@@ -28,9 +28,10 @@ def inline_assets(source: str) -> str:
     return source
 
 
-page = inline_assets((ROOT / "FPCRecruiting.html").read_text())
+page = inline_assets((ROOT / "FPCRecruiting-source.html").read_text())
 styles = inline_assets((ROOT / "styles.css").read_text())
 script = inline_assets((ROOT / "app.js").read_text())
 page = page.replace('<link rel="stylesheet" href="styles.css" />', f"<style>{styles}</style>")
 page = page.replace('<script src="app.js"></script>', f"<script>{script}</script>")
+(ROOT / "FPCRecruiting.html").write_text(page)
 (ROOT / "FPCRecruiting-Share.html").write_text(page)

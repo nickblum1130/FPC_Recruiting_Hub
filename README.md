@@ -1,6 +1,6 @@
 # FPC Football Recruiting Hub
 
-Open `FPCRecruiting.html` in a browser. This is a static, shareable college-coach recruiting app built from the supplied FPC recruiting presentation and roster spreadsheet.
+Share `FPCRecruiting.html`. It is a single, self-contained college-coach recruiting app built from the supplied FPC recruiting presentation and roster spreadsheet. Coaches should download it, then open it in Chrome, Safari, or Edge; Google Drive's in-browser preview does not run the app's interactive JavaScript.
 
 ## Included workflow
 
